@@ -6,7 +6,7 @@ app.use(express.json());
 const client = new pg.Client(
   process.env.DATABASE_URL || "postgres://localhost/the_acme_hr_directory_db"
 );
-const PORT = process.env.PORT || 3015;
+const PORT = process.env.PORT || 3000;
 
 app.get("/api/departments", async (req, res, next) => {
   try {
